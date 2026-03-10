@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed Yousry Khalaf - Computer & Systems Engineering Student | Data Engineering & AI Enthusiast Portfolio">
+    <title>Ahmed Yousry Khalaf | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Phosphor Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <canvas id="starsCanvas"></canvas>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">AY<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions" style="display: flex; gap: 1rem; align-items: center;">
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+                    <i class="ph ph-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="status-bar reveal-up">
+                        <span class="location">MINIA, EGYPT</span>
+                        <span class="availability"><span class="pulse-dot"></span> OPEN TO DATA & AI ROLES</span>
+                    </div>
+                    
+                    <p class="greeting reveal-up delay-1" style="font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase;">DATA ENGINEER &bull; AI ENTHUSIAST &bull; SYSTEMS ARCHITECTURE</p>
+                    <h1 class="name reveal-up delay-2" style="font-size: clamp(2.5rem, 5vw, 3.8rem);">Ahmed Yousry Khalaf</h1>
+                    <h2 class="tagline reveal-up delay-3">
+                        From messy rows to revenue-growing flows.
+                    </h2>
+                    <p class="hero-desc reveal-up delay-4">
+                        Engineering student turning complex datasets into scalable pipelines and analytical systems. I handle data modeling, backend architecture, and AI integration so you can focus on driving actionable insights and growth.
+                    </p>
+                    
+                    <div class="hero-actions reveal-up delay-5" style="align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+                        <a href="#projects" class="btn btn-primary" style="border-radius: 8px;">View Projects <i class="ph ph-arrow-up-right"></i></a>
+                        <a href="resume.pdf" target="_blank" class="btn btn-secondary" style="border-radius: 8px; border-color: rgba(255,255,255,0.2);">Download CV <i class="ph ph-download-simple"></i></a>
+                        <a href="#contact" class="text-link">Contact <i class="ph ph-envelope-simple"></i></a>
+                    </div>
+                    
+                    <div class="role-tags reveal-up delay-5">
+                        <span class="role-tag">Data Engineer</span>
+                        <span class="role-tag">Python Developer</span>
+                        <span class="role-tag">AI Integrator</span>
+                    </div>
+                </div>
+                
+                <div class="hero-panel-wrapper reveal-up delay-3">
+                    <div class="right-panel">
+                        <div class="profile-card" id="profile3D">
+                            <div class="frame"></div>
+                            <!-- User will place the image they provided named profile.png -->
+                            <img src="profile.png" alt="Ahmed Yousry" class="profile-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22%230f172a%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2338bdf8%22%20font-size%3D%2216%22%20font-family%3D%22sans-serif%22%3ESave%20your%20image%20as%20%27profile.png%27%20here%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                            <div class="glow-layer"></div>
+                        </div>
+                        
+                        <div class="focus-section">
+                            <h3 class="panel-heading"><span class="heading-line"></span> FOCUS</h3>
+                            <div class="focus-grid">
+                                <div class="focus-item"><span class="dot-accent"></span> Scalable Data Pipelines</div>
+                                <div class="focus-item"><span class="dot-accent"></span> Relational Databases</div>
+                                <div class="focus-item"><span class="dot-accent"></span> Intelligent AI Systems</div>
+                                <div class="focus-item"><span class="dot-accent"></span> Backend Architecture</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Professional Summary</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text glass-card reveal-up" style="padding: 2.5rem;">
+                        <p style="margin-bottom: 1.2rem;">I am a <strong>Computer and Systems Engineering student</strong> at Minia University with a strong academic record (GPA: 3.7). My primary focus lies in Data Engineering, Artificial Intelligence, and scalable system design.</p>
+                        <p>I continuously develop my expertise through hands-on projects, technical training programs like DEPI, and real-world data applications.</p>
+                        
+                        <div class="stats-grid" id="about-stats-grid">
+                            <div class="stat-item glass-card" style="padding: 1.5rem; text-align: center; background: rgba(15, 23, 42, 0.4);">
+                                <h3 style="font-size: 2.2rem; font-weight: 800; color: var(--accent-1);"><i class="ph ph-database"></i></h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; margin-top: 0.5rem;">Pipelines & DBs</p>
+                            </div>
+                            <div class="stat-item glass-card" style="padding: 1.5rem; text-align: center; background: rgba(15, 23, 42, 0.4);">
+                                <h3 style="font-size: 2.2rem; font-weight: 800; color: var(--accent-1);"><i class="ph ph-brain"></i></h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; margin-top: 0.5rem;">AI Integration</p>
+                            </div>
+                            <div class="stat-item glass-card" style="padding: 1.5rem; text-align: center; background: rgba(15, 23, 42, 0.4);">
+                                <h3 style="font-size: 2.2rem; font-weight: 800; color: var(--accent-1);">3.7</h3>
+                                <p style="color: var(--text-muted); font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; margin-top: 0.5rem;">Current GPA</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-details reveal-up delay-2">
+                        <div class="detail-card glass-card">
+                            <h3><i class="ph ph-map-pin"></i> Location</h3>
+                            <p>Minia, Egypt</p>
+                        </div>
+                        <div class="detail-card glass-card">
+                            <h3><i class="ph ph-translate"></i> Languages</h3>
+                            <ul class="language-list">
+                                <li>
+                                    <span>Arabic</span>
+                                    <span class="badge">Native</span>
+                                </li>
+                                <li>
+                                    <span>English</span>
+                                    <span class="badge">Intermediate</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="detail-card glass-card contact-quick">
+                            <h3><i class="ph ph-envelope-simple"></i> Quick Contact</h3>
+                            <a href="mailto:a7med.4ousry@gmail.com" class="contact-link">a7med.4ousry@gmail.com</a>
+                            <a href="tel:+201020513706" class="contact-link">+20 1020513706</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Technical Expertise</span>
+                    <h2 class="section-title">My Skills</h2>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skill-category glass-card reveal-up">
+                        <div class="category-header">
+                            <i class="ph ph-code"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">C</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Data & Viz -->
+                    <div class="skill-category glass-card reveal-up delay-1">
+                        <div class="category-header">
+                            <i class="ph ph-chart-line-up"></i>
+                            <h3>Data Analysis & Viz</h3>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Seaborn</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Databases -->
+                    <div class="skill-category glass-card reveal-up delay-2">
+                        <div class="category-header">
+                            <i class="ph ph-database"></i>
+                            <h3>Databases</h3>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">MySQL</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Engineering -->
+                    <div class="skill-category glass-card reveal-up">
+                        <div class="category-header">
+                            <i class="ph ph-cpu"></i>
+                            <h3>Engineering Fundamentals</h3>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">OOP</span>
+                            <span class="tag">Data Structures</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools -->
+                    <div class="skill-category glass-card reveal-up delay-1" style="grid-column: auto / span 2;">
+                        <div class="category-header">
+                            <i class="ph ph-wrench"></i>
+                            <h3>Tools & Software</h3>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">MATLAB</span>
+                            <span class="tag">Microsoft Excel</span>
+                            <span class="tag">Microsoft Word</span>
+                            <span class="tag">Microsoft PowerPoint</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Practical Implementations</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <a href="https://drive.google.com/drive/folders/16XXhtld2jPjYHdGDOJoGY-BS6zSF8AiR?usp=drive_link" target="_blank" class="project-card glass-card reveal-up" style="text-decoration: none; color: inherit;">
+                        <div class="project-content">
+                            <img src="radar_project.png" alt="Radar System Project" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22200%22%20viewBox%3D%220%200%20400%20200%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%230f172a%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2338bdf8%22%20font-size%3D%2214%22%20font-family%3D%22sans-serif%22%3ESave%20as%20%27radar_project.png%27%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                            <div class="project-header">
+                                <h3 style="display: flex; justify-content: space-between; align-items: center; width: 100%;">Radar & Sonar Visualizer <i class="ph ph-arrow-up-right" style="color: var(--accent-1); font-size: 1.2rem; filter: none;"></i></h3>
+                            </div>
+                            <p class="project-desc">Developed a rotating sonar scanning system capable of mapping a 180-degree environment using ultrasonic sensors. The collected data was processed and visualized through a 2D radar-style interface, demonstrating real-time sensor monitoring and hardware-software integration.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Arduino Uno</span>
+                                <span class="tech-tag">Ultrasonic Sensor</span>
+                                <span class="tech-tag">Servo Motor</span>
+                                <span class="tech-tag">Processing IDE</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Project 2 -->
+                    <a href="https://drive.google.com/drive/folders/1jYj4Gl8_1lTmSxO4aMzVT5UOxkyFAUox?usp=drive_link" target="_blank" class="project-card glass-card reveal-up delay-1" style="text-decoration: none; color: inherit;">
+                        <div class="project-content">
+                            <img src="dustbin_project.png" alt="Smart Touchless Dustbin Project" class="project-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22200%22%20viewBox%3D%220%200%20400%20200%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%230f172a%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2338bdf8%22%20font-size%3D%2214%22%20font-family%3D%22sans-serif%22%3ESave%20as%20%27dustbin_project.png%27%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                            <div class="project-header">
+                                <h3 style="display: flex; justify-content: space-between; align-items: center; width: 100%;">Smart Touchless Dustbin <i class="ph ph-arrow-up-right" style="color: var(--accent-1); font-size: 1.2rem; filter: none;"></i></h3>
+                            </div>
+                            <p class="project-desc">Designed and implemented an automated smart dustbin system that enables contactless waste disposal. The system uses ultrasonic sensing to detect user presence and triggers a servo motor to open the lid automatically, promoting hygienic and efficient interaction.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Arduino Uno</span>
+                                <span class="tech-tag">HC-SR04 Sensor</span>
+                                <span class="tech-tag">SG90 Servo</span>
+                                <span class="tech-tag">C++</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Training Section -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Internships & Training</span>
+                    <h2 class="section-title">Experience</h2>
+                </div>
+                
+                <div class="timeline reveal-up">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <h3>AI & Data Science Trainee</h3>
+                                <span class="date">Nov 2025 – Present</span>
+                            </div>
+                            <h4 class="organization gradient-text">Digital Egypt Pioneers Initiative (DEPI)</h4>
+                            <p class="timeline-desc">Intensive training in modern data engineering and AI technologies while applying best practices used in industry-level data systems.</p>
+                            <ul class="timeline-list">
+                                <li><i class="ph ph-check-circle"></i> Designing end-to-end data pipelines</li>
+                                <li><i class="ph ph-check-circle"></i> Performing data cleaning and exploratory data analysis (EDA)</li>
+                                <li><i class="ph ph-check-circle"></i> Implementing SQL-based data models</li>
+                                <li><i class="ph ph-check-circle"></i> Developing and evaluating machine learning algorithms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Continuous Learning</span>
+                    <h2 class="section-title">Certifications</h2>
+                </div>
+                
+                <div class="cert-grid">
+                    <!-- Cert 1 -->
+                    <a href="https://drive.google.com/file/d/1ezYNN6RpSJ10kQGa6OGSTJqNVoF_RZMz/view?usp=drive_link" target="_blank" class="cert-card glass-card reveal-up" style="text-decoration: none; color: inherit;">
+                        <img src="elements_of_ai.png" alt="Elements of AI Certificate" class="cert-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22200%22%20viewBox%3D%220%200%20400%20200%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%230f172a%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2338bdf8%22%20font-size%3D%2214%22%20font-family%3D%22sans-serif%22%3ESave%20as%20%27elements_of_ai.png%27%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                        <div class="cert-info">
+                            <h3 style="display: flex; justify-content: space-between; align-items: center;">Elements of AI <i class="ph ph-arrow-up-right" style="color: var(--accent-1); font-size: 1.2rem;"></i></h3>
+                            <p class="cert-org">University of Helsinki & Google</p>
+                            <p class="cert-desc" style="margin-top: 0.5rem;">Comprehensive curriculum covering AI fundamentals, machine learning concepts and neural networks.</p>
+                        </div>
+                    </a>
+                    
+                    <!-- Cert 2 -->
+                    <a href="https://drive.google.com/drive/folders/1mbvXN1X-iuMVkF9Fdu0XICIFlvvNbB1e?usp=drive_link" target="_blank" class="cert-card glass-card reveal-up delay-1" style="text-decoration: none; color: inherit;">
+                        <img src="arduino_cert.png" alt="Introduction to Arduino Certificate" class="cert-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22200%22%20viewBox%3D%220%200%20400%20200%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%230f172a%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2338bdf8%22%20font-size%3D%2214%22%20font-family%3D%22sans-serif%22%3ESave%20as%20%27arduino_cert.png%27%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                        <div class="cert-info">
+                            <h3 style="display: flex; justify-content: space-between; align-items: center;">Introduction to Arduino <i class="ph ph-arrow-up-right" style="color: var(--accent-1); font-size: 1.2rem;"></i></h3>
+                            <p class="cert-org">TIEC & ITIDA</p>
+                            <p class="cert-desc" style="margin-top: 0.5rem;">Hands-on technical workshop focused on hardware interfacing, sensors integration, and embedded automation.</p>
+                        </div>
+                    </a>
+
+                    <!-- Cert 3 -->
+                    <a href="https://drive.google.com/drive/folders/1FqhiAphlOrMkriU8FOaWcsY0d_R5AGf9?usp=drive_link" target="_blank" class="cert-card glass-card reveal-up" style="text-decoration: none; color: inherit;">
+                        <img src="freelancing_cert.png" alt="Freelancing Skills Workshop Certificate" class="cert-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22200%22%20viewBox%3D%220%200%20400%20200%22%3E%3Crect%20width%3D%22400%22%20height%3D%22200%22%20fill%3D%22%230f172a%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%2338bdf8%22%20font-size%3D%2212%22%20font-family%3D%22sans-serif%22%3ESave%20as%20%27freelancing_cert.png%27%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                        <div class="cert-info">
+                            <h3 style="display: flex; justify-content: space-between; align-items: center;">Freelancing Skills Workshop <i class="ph ph-arrow-up-right" style="color: var(--accent-1); font-size: 1.2rem;"></i></h3>
+                            <p class="cert-org">YAT Learning Solutions</p>
+                            <p class="cert-desc" style="margin-top: 0.5rem;">Completed training focusing on core freelancing principles, professional development, and practical applications.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact</h2>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-cta reveal-up">
+                        <h2 class="gradient-text">Let's build something amazing together</h2>
+                        <p>Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                        
+                        <div class="contact-links mt-4">
+                            <a href="https://www.linkedin.com/in/a7med-yousry" target="_blank" class="btn btn-primary">
+                                <i class="ph ph-linkedin-logo"></i> LinkedIn Profile
+                            </a>
+                            <a href="https://github.com/a7med-4ousry" target="_blank" class="btn btn-secondary">
+                                <i class="ph ph-github-logo"></i> GitHub
+                            </a>
+                            <a href="mailto:a7med.4ousry@gmail.com" class="btn btn-secondary">
+                                <i class="ph ph-paper-plane-tilt"></i> Say Hello
+                            </a>
+                            <a href="tel:+201020513706" class="btn btn-secondary">
+                                <i class="ph ph-phone"></i> Call Me
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>AHMED YOUSRY KHALAF</h3>
+                <p>Data Engineer | AI Enthusiast | Systems Architecture</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/a7med-yousry" target="_blank" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="https://github.com/a7med-4ousry" target="_blank" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                <a href="mailto:a7med.4ousry@gmail.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
